@@ -3,7 +3,7 @@
 #define IN 1  // Inside word
 #define OUT 0 // Outside word
 
-int main()
+void exercise_1_12()
 {
     int c;
 
@@ -18,6 +18,4 @@ int main()
             putchar(c);
         }
     }
-
-    return 0;
 }

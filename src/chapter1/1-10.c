@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+void exercise_1_10()
 {
     int c;
 
@@ -16,6 +16,4 @@ int main()
             putchar(c);
         }
     }
-
-    return 0;
 }

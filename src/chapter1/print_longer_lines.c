@@ -5,7 +5,7 @@
 
 int get_line(char line[], int maxlength);
 
-int main()
+void exercise_1_16()
 {
 
     int len;
@@ -18,8 +18,6 @@ int main()
             printf("%s", line);
         }
     }
-
-    return 0;
 }
 
 int get_line(char s[], int lim)

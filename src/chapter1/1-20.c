@@ -1,12 +1,12 @@
+#include "chapter1.h"
 #include <stdio.h>
 
 #define MAXLINE 1000
 #define COLUMN_WIDTH 4
 
-int get_line(char s[], int lim);
 void replace_tabs(char to[], char from[], int column_width);
 
-int main()
+void exercise_1_20()
 {
     int len;
     char line[MAXLINE];
@@ -22,25 +22,6 @@ int main()
         replace_tabs(blank_line, line, COLUMN_WIDTH);
         printf("%s\n", blank_line);
     }
-
-    return 0;
-}
-
-int get_line(char s[], int lim)
-{
-    int c, i;
-    for (i = 0; i < lim - 1 && ((c = getchar()) != EOF) && c != '\n'; ++i)
-    {
-        s[i] = c;
-    }
-    if (c == '\n')
-    {
-        s[i] = c;
-        ++i;
-    }
-
-    s[i] = '\0';
-    return i;
 }
 
 void replace_tabs(char to[], char from[], int column_width)

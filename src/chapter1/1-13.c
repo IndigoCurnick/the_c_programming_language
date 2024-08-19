@@ -2,7 +2,7 @@
 
 #define WORDMAX 15
 
-int main()
+void exercise_1_13()
 {
 
     int c;
@@ -37,6 +37,4 @@ int main()
         }
         printf("\n");
     }
-
-    return 0;
 }

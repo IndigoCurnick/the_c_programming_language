@@ -1,4 +1,18 @@
 My solutions to "The C Programming Language" 2nd Edition. 
 
-Note, this is not intended to be a full solution to every single problem, but 
-as a scratchpad for me to use some C.
+## Build and Run
+
+This project requires `cmake` and `make`. To build
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+To run:
+
+```
+./c_prog_lang
+```

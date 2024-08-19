@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+void exercise_1_9()
 {
     char c;
     char last_c = '\0';
@@ -13,6 +13,4 @@ int main(void)
 
         last_c = c;
     }
-
-    return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+void exercise_1_8(void)
 {
     int blanks_nr = 0;
     int tabs_nr = 0;
@@ -25,6 +25,4 @@ int main(void)
 
     printf("blanks_nr: %d\ntabs_nr: %d\nnewlines_nr: %d\n",
            blanks_nr, tabs_nr, newlines_nr);
-
-    return 0;
 }
