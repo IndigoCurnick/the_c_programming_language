@@ -1,4 +1,5 @@
 #include "chapter1.h"
+#include "chapter2.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,7 +16,18 @@ int main(int argc, char *argv[])
     int chapter = atoi(argv[1]);
     int exercise = atoi(argv[2]);
 
-    chapter1(exercise);
+    switch (chapter)
+    {
+    case 1:
+        chapter1(exercise);
+        break;
+    case 2:
+        chapter2(exercise);
+        break;
+    default:
+        printf("Unknown chapter");
+        break;
+    }
 
     return 0;
 }
