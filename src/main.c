@@ -1,5 +1,6 @@
 #include "chapter1.h"
 #include "chapter2.h"
+#include "chapter3.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,6 +24,9 @@ int main(int argc, char *argv[])
         break;
     case 2:
         chapter2(exercise);
+        break;
+    case 3:
+        chapter3(exercise);
         break;
     default:
         printf("Unknown chapter");

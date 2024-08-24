@@ -5,7 +5,7 @@ int binsearch(int x, int v[], int n);
 int alt_binsearch(int x, int v[], int n);
 void init_vector(int v[], int n);
 
-int main()
+void exercise_3_1()
 {
     int n = 100000;
     int v[n];
@@ -34,8 +34,6 @@ int main()
     alt_clock = clock() - alt_clock;
 
     printf("Book method took %.4f seconds and alt method took %.4f seconds\n", (double)book_clock / CLOCKS_PER_SEC, (double)alt_clock / CLOCKS_PER_SEC);
-
-    return 0;
 }
 
 void init_vector(int v[], int n)
