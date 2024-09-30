@@ -1,0 +1,16 @@
+add_library(chapter5 STATIC 
+    chapter5.c
+    get_unget.c
+    get_line.c
+    5-1.c
+    5-2.c
+    5-3.c
+    5-4.c
+    5-5.c
+    5-6.c
+    5-7.c
+    5-8.c
+    5-9.c
+    5-10.c
+    5-11.c
+)

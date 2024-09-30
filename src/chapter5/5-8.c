@@ -9,6 +9,20 @@ int day_of_year(int year, int month, int day);
 void month_day(int year, int yearday, int *pmonth, int *pday);
 int is_leap(int year);
 
+void exercise_5_8()
+{
+    int doy = day_of_year(2023, 4, 5);
+
+    printf("April 5th 2023 is the %d day of the year\n", doy);
+
+    int pmonth;
+    int pday;
+
+    month_day(2023, 95, &pmonth, &pday);
+
+    printf("The 95th day of 2023 is the %dth month and the %dth day\n", pmonth, pday);
+}
+
 int day_of_year(int year, int month, int day)
 {
     int i, leap;
@@ -52,20 +66,4 @@ void month_day(int year, int yearday, int *pmonth, int *pday)
 int is_leap(int year)
 {
     return year & 4 == 0 && year % 100 != 0 || year % 400 == 0;
-}
-
-int main()
-{
-    int doy = day_of_year(2023, 4, 5);
-
-    printf("April 5th 2023 is the %d day of the year\n", doy);
-
-    int pmonth;
-    int pday;
-
-    month_day(2023, 95, &pmonth, &pday);
-
-    printf("The 95th day of 2023 is the %dth month and the %dth day\n", pmonth, pday);
-
-    return 0;
 }
