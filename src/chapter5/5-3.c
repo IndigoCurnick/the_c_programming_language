@@ -3,7 +3,7 @@
 
 #define MAXLEN 1000
 
-void strcat(char *s, char *t);
+static void my_strcat(char *s, char *t);
 
 void exercise_5_3()
 {
@@ -12,12 +12,12 @@ void exercise_5_3()
     get_line(s, MAXLEN);
     get_line(t, MAXLEN);
 
-    strcat(s, t);
+    my_strcat(s, t);
 
     printf("%s\n", s);
 }
 
-void strcat(char *s, char *t)
+static void my_strcat(char *s, char *t)
 {
 
     while (*s != '\0')

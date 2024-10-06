@@ -17,5 +17,12 @@ void exercise_5_8();
 void exercise_5_9();
 void exercise_5_10(int argc, char *argv[]);
 void exercise_5_11(int argc, char *argv[]);
+void exercise_5_12(int argc, char *argv[]);
+void exercise_5_13(int argc, char *argv[]);
+void exercise_5_14(int argc, char *argv[]);
+void exercise_5_15(int argc, char *argv[]);
+void exercise_5_16(int argc, char *argv[]);
+void exercise_5_18();
+void exercise_5_19();
 
 #endif

@@ -13,4 +13,11 @@ add_library(chapter5 STATIC
     5-9.c
     5-10.c
     5-11.c
+    5-12.c
+    5-13.c
+    5-14.c
+    5-15.c
+    5-16.c
+    5-18.c
+    5-19.c
 )

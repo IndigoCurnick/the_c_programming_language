@@ -3,35 +3,35 @@
 
 #define MAXLEN 100
 
-void strncpy(char *s, char *t, int n);
-void strncat(char *s, char *t, int n);
-int strncmp(char *s, char *t, int n);
+static void my_strncpy(char *s, char *t, int n);
+static void my_strncat(char *s, char *t, int n);
+static int my_strncmp(char *s, char *t, int n);
 
 void exercise_5_5()
 {
     char s[MAXLEN] = "Hello this will be in the final string";
     char t[MAXLEN] = "world this will not be in the final string";
 
-    strncpy(s, t, 5);
+    my_strncpy(s, t, 5);
 
     printf("%s\n", s);
 
     char p[MAXLEN] = "Hello ";
     char q[MAXLEN] = "world this will not be in the final string";
 
-    strncat(p, q, 5);
+    my_strncat(p, q, 5);
 
     printf("%s\n", p);
 
     char m[MAXLEN] = "Hello ";
     char n[MAXLEN] = "HellO ";
 
-    int cmp = strncmp(m, n, 5);
+    int cmp = my_strncmp(m, n, 5);
 
     printf("%d\n", cmp);
 }
 
-int strncmp(char *s, char *t, int n)
+static int my_strncmp(char *s, char *t, int n)
 {
     for (int i = 0; *s != '\0' && *t != '\0' && i < n; i++)
     {
@@ -46,7 +46,7 @@ int strncmp(char *s, char *t, int n)
     return 0;
 }
 
-void strncat(char *s, char *t, int n)
+static void my_strncat(char *s, char *t, int n)
 {
 
     while (*s != '\0')
@@ -70,7 +70,7 @@ void strncat(char *s, char *t, int n)
     }
 }
 
-void strncpy(char *s, char *t, int n)
+static void my_strncpy(char *s, char *t, int n)
 {
 
     int s_len = str_len(s);
