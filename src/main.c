@@ -5,6 +5,8 @@
 #include "chapter5.h"
 #include "chapter6.h"
 #include "chapter7.h"
+#include "chapter8.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -42,6 +44,9 @@ int main(int argc, char *argv[])
         break;
     case 7:
         chapter7(exercise, argc - 3, argv + 3);
+        break;
+    case 8:
+        chapter8(exercise, argc - 3, argv + 3);
         break;
     default:
         printf("Unknown chapter");

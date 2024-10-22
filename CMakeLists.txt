@@ -11,6 +11,7 @@ add_subdirectory(src/chapter4)
 add_subdirectory(src/chapter5)
 add_subdirectory(src/chapter6)
 add_subdirectory(src/chapter7)
+add_subdirectory(src/chapter8)
 
 add_executable(c_prog_lang src/main.c)
 
@@ -23,5 +24,7 @@ target_link_libraries(
     chapter5
     chapter6
     chapter7
+    chapter8
 )
+
 target_link_libraries(c_prog_lang m)
